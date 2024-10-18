@@ -1,0 +1,230 @@
+# do NOT include a trailing slash on the base URL
+base_url = "https://dalf.github.io/zola_example/"
+# Usable site directly from disk, Including Search: "/home/jieiku/.dev/abridge/public"
+# Also set index format = "elasticlunr_javascript", and in [extra] uglyurls = true, integrity = false
+# If you use the npm/node script then all you have to do is set offline = true, and everything else is automatic.
+
+title = "Game Design"
+description = "Quelques pages à propos du game design." #for SEO aim for 140-180 Characters
+theme = "abridge"
+
+default_language = "en"
+compile_sass = true
+minify_html = false
+build_search_index = true
+generate_feeds = true
+taxonomies = [
+    # {name = "categories", feed = true},
+    {name = "tags", feed = true},
+]
+
+#feed_filename = "atom.xml"
+#output_dir = "public"
+#ignored_content = ["*.{graphml,xlsx}", "temp.*"]
+#hard_link_static = false # set to true to hard link instead of copying, useful for very large files.
+
+[search]                # Options specific to elasticlunr search.
+# index format can be: elasticlunr_json or elasticlunr_javascript or fuse_json
+index_format = "elasticlunr_json"
+include_title = true        # include title of page/section in index
+include_description = true # include description of page/section in index
+include_content = true      # include rendered content of page/section in index
+# truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+bottom_footnotes = true # adds footnote backreference
+render_emoji = false
+external_links_target_blank = true # rel="noopener"
+external_links_no_follow = false   # rel="nofollow"
+external_links_no_referrer = false # rel="noreferrer"
+smart_punctuation = false          # `...` to `…`, `"quote"` to `“curly”` etc
+
+[extra]
+###############################################################################
+### Layout & Format
+### position: top, bottom, both, false(hidden)
+### size: s150, s140, s130, s120, s110, s95, s90, s85, s80, s75, s70, false(full size)
+### divider:    " "        "&middot;"        "&bull;"
+###############################################################################
+
+menu = [
+#    {url = "blog", name = "Blog", slash = true, blank = false, size="s110"},
+#    {url = "about", name = "About", slash = true, blank = false, size="s110"},
+    {url = "archive", name = "Posts", slash = true, blank = false, size="s110"},
+#    {url = "categories", name = "Categories", slash = true, blank = false, size="s110"},
+    {url = "tags", name = "Tags", slash = true, blank = false, size="s110"},
+]
+menu_footer = [
+    {url = "about", name = "About", slash = true, blank = false, size="s90"},
+    {url = "contact", name = "Contact", slash = true, blank = false, size="s90"},
+    {url = "privacy", name = "Privacy", slash = true, blank = false, size="s90"},
+    {url = "sitemap.xml", name = "Sitemap", slash = false, blank = true, size="s90"},
+]
+
+toc = true
+recent = true # TOC / index
+recent_items = 15
+series = true
+series_items = 9 # Max number of items to display in series list, use 0 to disable
+#Series_parts = "$NUMBER_OF_PARTS part Series"
+
+#arrow_pagination = true # If set to true then the pagination will use the old arrows mode, be sure to also enable the icons.
+
+meta_index = { position="bottom", size="s90", author=false, readtime=false, readstring="min", date=true, updated=false, categories_tags=true, divider="" }
+meta_post = { position="top", size="s95", author=false, readtime=false, readstring="min read", date=true, updated=true, categories_tags=true, divider="" }
+
+hide_section_dates = false # hides the date for sections that use posts.html as their template.
+hide_page_nextprev_titles = false # hides the next/previous titles for pages that use page.html as their template.
+title_size_index = "s85"
+footer_size = "s80" # the size of the copyright and powered by text
+footer_credit = true
+#footer_credit_override = '<p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> &#38; <a href="https://github.com/Jieiku/abridge/" target="_blank">Abridge</a></p>'
+#archive_reverse = true # Set to True to sort posts chronologically per year instead of newest first on the archive page: example.com/archive/
+
+### Uncomment one of the below lines, or neither, depending on which type of logo you want to use:
+#logo = { file="logo.svg", width="32", height="32", alt="Abridge", text="bridge" }
+#textlogo = '<font color="#f90">A</font>bridge'
+
+sitedesc = false # enables or disables the display of the site description below the logo.
+headhr = false # show or hide horizontal rule below header
+foothr = true # show or hide horizontal rule above footer
+
+### $CURRENT_YEAR and $SITE_TITLE can be used anywhere within the copyright, you can change their position or you can also delete them and type whatever you want instead.
+#copyright = false # set to false to disable the copyright.
+#copyright_override = '© 2019-$CURRENT_YEAR $SITE_TITLE'
+#copyright_override = '© $CURRENT_YEAR $SITE_TITLE • Website content is licensed <a rel="noopener" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.'
+
+
+###############################################################################
+### meta/seo/analytic tags
+### To disable title_addition but keep built in page additions eg, Posts page: "Posts | Abridge" set title_addition to an empty string
+### To always set the page title exactly eg "Abridge" then comment out title_addition or set to false (not recommend, bad for SEO)
+###############################################################################
+
+title_separator = "|"  # Separator between title and title_addition, set as |, -, _, etc
+title_addition = "Game Design" # a default value for title addition (for SEO aim for 50-70 characters including the title and separator 'Abridge | title_addition')
+author = "Various" # Put Your Name here
+keywords = "Game design, Youtube" # used for the primary site index
+# banner = "banner.png" # Used as default image for OpenGraph/Twitter if page specific image is undefined.
+#twitter_meta = "your-user-name" # for SEO: twitter:site and twitter:creator
+#google = "Your Google Site verification code."
+#bing = "Your Bing Site verification code."
+seo = false  # enable or disable seo-related meta tags: opengraph, facebook, twitter
+#dev = false # development mode, if true then robots.txt should prevent search indexing.
+
+#head_extra = '<meta name="analytics" content="my-analytics-id" /><meta name="advertising" content="my-advertising-id" />'
+
+
+###############################################################################
+### Footer social links; these are used in macros/social.html
+###   https://github.com/Jieiku/abridge/blob/master/templates/macros/social.html
+###############################################################################
+
+feed = true # this adds the RSS feed icon in the footer.
+mail = "name@example.com"
+#mastodon = "https://mastodon.example.com/@username"
+#element = "matrix.example.com"
+#buymeacoffee = "your-user-name"
+#kofi = "your-user-name"
+#discord = "your-discord" # Everything after https://discord.com/   eg: invite/my-server  *or*  servers/my-server-id
+#twitter = "your-user-name"
+#facebook = "your-user-name"
+#linkedin = "your-user-name"
+#gitlab = "your-user-name"
+#github = "your-user-name"
+#codeberg = "your-user-name" # Everything after https://codeberg.org/   eg: username  *or*  username/repository
+#github_sponsor = "your-user-name"
+#bitbucket = "your-user-name"
+#python = "your-user-name"
+#docker = "your-user-name"
+#stack = "your-user-name"
+#instagram = "your-user-name"
+#pixelfed = "https://pixelfed.example.com/" # Heaviest icon, off by default
+#pinterest = "your-user-name"
+#twitch = "your-user-name"
+#youtube = "channel/your-channel-id"
+#peertube = "https://peertube.example.com/@username"
+#researchgate = "your-profile-id"
+#telegram = "your-user-name"
+
+
+###############################################################################
+### Resource Files
+### You can load extra css files if you need to, just separate by comma:
+### stylesheets = [ "abridge.css", "extra.css" ]
+### search_library, library to use. valid values:
+###   false, "elasticlunr", "elasticlunrjava", "pagefind", "tinysearch", "offline"
+###     elasticlunr - elasticlunr using the elasticlunr_json index format
+###     elasticlunrjava - elasticlunr using the elasticlunr_javascript index format
+###     pagefind - pagefind using the fuse_json index format
+###     tinysearch - tinysearch using the fuse_json index format
+###     offline - elasticlunr using the elasticlunr_javascript index format with content paths relative to the location on disk.
+###       (offline: implies uglyurls=true and integrity=false, node script will pass base_url argument as the path on disk.)
+###
+###       The PWA feature is another way to build an offline site, so there are now two
+###       different ways to build an offline site with Abridge.
+###############################################################################
+
+uglyurls = false # if set to true then links are generated with the full path. eg https://abridge.netlify.app/index.html
+integrity = true # increases site security, should normally be true. (setting to false is useful during js development)
+js_bundle = true # multiple javascript files combined into a single file (setting to false is useful during js development)
+
+js_copycode = true # The copy button on code blocks that allows you to copy them to the clipboard.
+js_email_encode = true # obfuscates email address in footer
+js_prestyle = true # used to preload: FontAwesome, Katex, external Google Fonts
+js_switcher = true # The button that allows manually changing between light/dark mode.
+js_switcher_default = "dark" # default nojs switcher mode: dark, light (make sure to also set $switcherDefault in abridge.scss)
+
+search_library = "elasticlunr"
+stylesheets = ["abridge.css"]
+
+webmanifest = "manifest.min.json" # Required for PWAs
+
+
+###############################################################################
+### PWA (Progressive Web Application)
+### By default Abridge has pwa_NORM_TTL and pwa_LONG_TTL set to 0, this essential turns the PWA cache strategy into network first.
+###  Abridge uses cachebust hashing on js and css files, so anytime a page cache is updated, these resources would also get updated if changed.
+###  Media files rarely change, especially font files, so it is a good idea cache indefinitely.
+###  For pwa_TTL_EXEMPT indefinitely cached resources, you can force a new cache by incrementing the pwa_VER (cache version number).
+### If you would like to try a cache first strategy then set a value higher than 0 for pwa_NORM_TTL and pwa_LONG_TTL.
+###  The options below other than pwa=true, only come into play when the npm/node script is ran.
+###############################################################################
+
+pwa = true # true to load the service worker
+pwa_VER = '3.12.1' # Service Worker cache version. (increment if you need to force a new cache)
+
+### 3600=1hour, 28800=8hours, 86400=1day, 604800=1week, 1209600=2weeks
+pwa_NORM_TTL = 0 #  86400 is reasonable. html, json, xml, anything else undefined
+pwa_LONG_TTL = 0 # 604800 is reasonable.
+
+### list of files that overrides TTL_LONG/TTL_EXEMPT to be a NORM TTL.
+pwa_TTL_NORM = '"sw.min.js", "sw_load.min.js"'
+
+### TTL_LONG file extensions will be cached for the LONG_TTL duration.
+pwa_TTL_LONG = '"jpg", "jpeg", "png", "gif", "webp", "avif", "ico", "svg", "xsl", "txt"'
+
+### TTL_EXEMPT file extensions will be cached indefinitely unless sw_load version is incremented, which would invalidate any existing cache. (and a new cache would be started)
+pwa_TTL_EXEMPT = '"js", "css", "otf", "eot", "ttf", "woff", "woff2", "mp4", "webm", "mp3", "ogg"'
+
+### If set to true then the entire site is cached. (useful for making an entire site usable while offline)
+pwa_cache_all = true
+
+### List of Files for the PWA to initially Cache, used if pwa_cache_all = false
+pwa_BASE_CACHE_FILES = "'/js/theme.min.js','/js/theme_light.min.js','/abridge.css','/js/abridge.min.js','/','/404.html','/offline/','/manifest.min.json'"
+
+
+###############################################################################
+### Favicons, comment out a line to disable loading some or all of these if needed.
+###############################################################################
+
+favicon_theme_color = "#333333"
+favicon_ms_color = "#333333"
+favicon_mask = "safari-pinned-tab.svg" # safari-pinned-tab.svg
+favicon_mask_color = "#ff9900"
+favicon_svg = "favicon.svg" # favicon.svg
+favicon180 = "apple-touch-icon.png" # apple-touch-icon.png
+favicon32 = "favicon-32x32.png" # favicon-32x32.png
+favicon16 = "favicon-16x16.png" # favicon-16x16.png
