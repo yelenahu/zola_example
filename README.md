@@ -17,7 +17,7 @@ Voir <https://dalf.github.io/zola_example/>
 
 ## Ajout d'une entrée
 
-Créer un fichier dans `content` en se basant sur les fichier existants:
+Créer un fichier dans `content` en se basant sur les fichier existants (exercice #2):
 
 ```
 +++
