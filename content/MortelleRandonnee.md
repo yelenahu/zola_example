@@ -5,7 +5,7 @@ description = "Un jeu génial"
 <p> Many resources could be used, including 
 <a href="https://biodiversitypmc.sibils.org/" rel="noreferrer">this link</a>. <br></p>
 
-date = 2022-07-22T00:00:00Z
+date = 2024-07-22T00:00:00Z
 draft = false
 
 Essayons de prendre quelque *notes* !
