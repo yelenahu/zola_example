@@ -11,5 +11,10 @@ tags = ["Esquive les flèches ou bien meurs pour l'éternité et au-delà!"]
 toc = true
 +++
 
-toto
+![Logo banner] (https://biodiversitypmc.sibils.org/img/logo_banner.7ff68d4d.png)
 
+ | Lundi | Mardi | Mercredi |
+ |:------|:-----:|---------:|
+ |Pilates| Danse | Yoga     |
+ | Danse | Yoga  | Pilates  |
+ | Yoga  | Pilate| Danse    |
