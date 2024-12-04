@@ -2,11 +2,15 @@
 title = "Mortelle Randonnée"
 description = "Un jeu génial"
 
+date = 2024-07-22T00:00:00Z
+draft = false
+
++++
+
+
 <p> Many resources could be used, including 
 <a href="https://biodiversitypmc.sibils.org/" rel="noreferrer">this link</a>. <br></p>
 
-date = 2024-07-22T00:00:00Z
-draft = false
 
 Essayons de prendre quelque *notes* !
 
