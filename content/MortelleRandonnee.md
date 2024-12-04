@@ -17,13 +17,13 @@ draft = false
 
 # 2ème niveau
 
-Essayons de prendre quelque **notes**.
+Essayons de prendre quelque *notes*.
 
 
 # 3ème niveau
 
 
-** Voici un texte en gras ! **
+**Voici un texte en gras !**
 
 [taxonomies]
 tags = ["Esquive les flèches ou meurs pour l'éternité et au-delà !"]
