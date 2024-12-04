@@ -29,8 +29,7 @@ Essayons de prendre quelque *notes*.
 
 **Voici un texte en gras qui doit apparaître en gras. [^1]**
 
-![logo](https://biodiversitypmc.sibils.org/img/logo_banner.7ff68d4d.png)
-
-+++
+![Truc](https://biodiversitypmc.sibils.org/img/logo_banner.7ff68d4d.png
+"logo")
 
 [^1]: la note !
