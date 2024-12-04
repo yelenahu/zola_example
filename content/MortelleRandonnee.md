@@ -16,7 +16,7 @@ toc = true
 
 # 1er niveau
 
-<!-- Code en HTML --> 
+![Image](https://biodiversitypmc.sibils.org/img/logo_banner.7ff68d4d.png) 
 
 <p> Many resources could be used, including 
 <a href="https://biodiversitypmc.sibils.org/" rel="noreferrer">this link</a>. <br></p>
@@ -29,7 +29,5 @@ Essayons de prendre quelque *notes*.
 
 **Voici un texte en gras qui doit apparaître en gras. [^1]**
 
-
-![Image](https://biodiversitypmc.sibils.org/img/logo_banner.7ff68d4d.png) 
 
 [^1]: la note !
