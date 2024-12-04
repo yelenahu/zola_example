@@ -14,7 +14,6 @@ draft = false
 <p> Many resources could be used, including 
 <a href="https://biodiversitypmc.sibils.org/" rel="noreferrer">this link</a>. <br></p>
 
-
 # 2ème niveau
 
 Essayons de prendre quelque *notes*.
@@ -23,7 +22,7 @@ Essayons de prendre quelque *notes*.
 
 **Voici un texte en gras qui doit apparaître en gras.**
 
-![logo](https://biodiversitypmc.sibils.org/img/logo_banner.7ff68d4d.png)
+ ![logo] (https://biodiversitypmc.sibils.org/img/logo_banner.7ff68d4d.png)
 
 [taxonomies]
 tags = ["Esquive les flèches ou meurs pour l'éternité et au-delà !"]
