@@ -1,0 +1,5 @@
+
+Sitemap: https://yelenahu.github.io/zola_example/sitemap.xml
+User-Agent: *
+Allow: /
+Host: https://yelenahu.github.io/zola_example
