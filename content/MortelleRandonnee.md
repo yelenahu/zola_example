@@ -14,7 +14,7 @@ draft = false
 
 Essayons de prendre quelque *notes* !
 
-Voici un >italique !
+Voici un > italique !
 
 ![Logo](https://biodiversitypmc.sibils.org/img/logo_banner.7ff68d4d.png "Logo de SIBiLS")
 
