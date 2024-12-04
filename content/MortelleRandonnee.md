@@ -20,9 +20,9 @@ Essayons de prendre quelque *notes*.
 
 # 3ème niveau
 
-**Voici un texte en gras qui doit apparaître en gras.**
+**Voici un texte en gras qui doit apparaître en gras. [^1]**
 
- ![logo] (https://biodiversitypmc.sibils.org/img/logo_banner.7ff68d4d.png)
+![logo](https://biodiversitypmc.sibils.org/img/logo_banner.7ff68d4d.png)
 
 [taxonomies]
 tags = ["Esquive les flèches ou meurs pour l'éternité et au-delà !"]
@@ -31,3 +31,4 @@ tags = ["Esquive les flèches ou meurs pour l'éternité et au-delà !"]
 toc = true
 +++
 
+[^1]: la note !
