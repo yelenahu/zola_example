@@ -19,10 +19,12 @@ draft = false
 
 Essayons de prendre quelque *notes*.
 
-
 # 3ème niveau
 
 **Voici un texte en gras qui doit apparaître en gras.**
+
+![logo](https://biodiversitypmc.sibils.org/img/logo_banner.7ff68d4d.png
+"Sibils")
 
 [taxonomies]
 tags = ["Esquive les flèches ou meurs pour l'éternité et au-delà !"]
