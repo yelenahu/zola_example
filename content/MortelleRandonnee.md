@@ -14,12 +14,11 @@ draft = false
 <p> Many resources could be used, including 
 <a href="https://biodiversitypmc.sibils.org/" rel="noreferrer">this link</a>. <br></p>
 
-![Logo](https://biodiversitypmc.sibils.org/img/logo_banner.7ff68d4d.png "Logo de SIBiLS")
 
 # 2ème niveau
 
+Essayons de prendre quelque **notes**.
 
-Essayons de prendre quelque *notes* !
 
 # 3ème niveau
 
