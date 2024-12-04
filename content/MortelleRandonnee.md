@@ -22,8 +22,7 @@ Essayons de prendre quelque *notes*.
 
 # 3ème niveau
 
-
-**Voici un texte en gras !**
+**Voici un texte en gras qui doit apparaître en gras.**
 
 [taxonomies]
 tags = ["Esquive les flèches ou meurs pour l'éternité et au-delà !"]
